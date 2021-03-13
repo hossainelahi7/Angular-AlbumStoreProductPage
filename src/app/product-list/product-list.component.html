@@ -1,6 +1,10 @@
 <ul>
-  product-list works!
+  <h3>product-list works!</h3>
   <li for *ngFor="let product of products">
-    <span class="album-name">{{ product.albumName }}</span>
+    <a href='/product/{{product.id}}' 
+    class='album-name'
+    routerLink='/product/{{product.id}}'
+    routerLinkActive='active'
+    >{{ product.albumName }}</a>
   </li>
 </ul>
